@@ -1,0 +1,232 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>IPTs: Powerful Low-Level Vision Architectures</title>
+    <script type="text/javascript" async="" src="./IPT_series_files/js"></script>
+    <link href="./IPT_series_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./IPT_series_files/css" rel="stylesheet" type="text/css">
+    <style>
+      body {
+        font-family: 'sans-serif';
+        font-size: 12pt;
+        background-color: #FFFCF4;
+        color: #4F6071;
+      }
+      .color1 {
+        background-color: #CCC;
+      }
+      #header {
+        width: 100%;
+        height: 360px;
+        background-color: #d6e7f0
+      }
+      #header-inner {
+        position: absolute;
+        width: 70%;
+        left: 30%;
+        top: 150px;
+      }
+      .img-me {
+        border: 3px solid white;
+        float: left;
+        height: 200px;
+      }
+      .header-text {
+        margin-top: 60px;
+        margin-left: 220px;
+      }
+      .header-text-name {
+        font-weight: bold;
+        font-size: 40px;
+      }
+      .header-text-email {
+        font-size: 20px;
+        font-style: italic;
+      }
+      .header-text-desc {
+        font-size: 20px;
+      }
+      #contact-info {
+        position: absolute;
+        left: 80%;
+        width: 20%;
+        top: 360px;
+        height: 100px;
+        background-color: #EEE;
+      }
+      .vspace {
+        margin-bottom: 20px;
+      }
+      .vspace-top {
+        margin-top: 30px;
+      }
+      .paper-image {
+        width: 150px;
+      }
+      .paper-title {
+        font-size: 14pt;
+        font-weight: bold;
+      }
+      .paper-authors {
+      }
+      .paper-authors a {
+        color: #4F6071;
+      }
+      .paper-link {
+      }
+    </style>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-50623594-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <div id="header-inner">
+        <img src="./IPT_series_files/ipt_logo.png" class="img-circle img-me">
+        <div class="header-text">
+          <div class="header-text-name">
+            IPT-Series
+          </div>
+          <div class="header-text-email">
+            Powerful Low-Level Vision Architectures
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col-xs-10 col-md-offset-1">
+
+        <div class="row">
+          <h1>Intro</h1>
+          We propose a series of powerful image processing architectures that handles a variety of low-level vision tasks, including denoising, deraining, Super-Resolution, diffusion generation, etc. The models have SOTA performance on these tasks.
+        </div>
+
+        <div class="row">
+          <h1>News</h1>
+          7/2/2024: We released a powerful All-in-One image restoration model <a href="https://arxiv.org/abs/2407.00676">Instruct-IPT</a>!<br>
+          6/19/2024: Our work "<a href="https://arxiv.org/abs/2407.00676">Image Processing GNN</a>" got the "Best Student Paper Runner-Up" award at CVPR2024!<br>
+          6/2/2024: We released the code and weights of <a href="https://github.com/YuchuanTian/U-DiT">U-DiTs</a>!<br>
+        </div>
+
+        <div class="row">
+          <h1>Projects</h1>
+
+          <div class="row vspace-top">
+            <div class="col-xs-3 text-center">
+              <img class="paper-image" src="./IPT_series_files/ipt_fig.png">
+            </div>
+            <div class="col-xs-9">
+              <div class="paper-title">
+                Pre-Trained Image Processing Transformer (IPT)
+              </div>
+              <!-- <div class="paper-authors">
+                Hanting Chen,
+                <a href="https://www.wangyunhe.site/">Yunhe Wang</a>,
+                Tianyu Guo,
+                Chang Xu,
+                Yiping Deng,
+                Zhenhua Liu,
+                Siwei Ma,
+                Chunjing Xu,
+                Chao Xu,
+                Wen Gao
+              </div> -->
+              <div>CVPR 2021</div>
+              <div> <i>"The first Transformer for low-level vision" </i></div>
+              <div>
+                <a href="https://arxiv.org/abs/2012.00364">[Paper]</a>
+                <a href="https://github.com/huawei-noah/Pretrained-IPT">[Code]</a>
+                <a href="./IPT_series_files/ipt_bib.bib">[BibTex]</a>
+              </div>
+              <a href="https://paperswithcode.com/sota/single-image-deraining-on-test100?p=pre-trained-image-processing-transformer">
+                <img src="https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/pre-trained-image-processing-transformer/single-image-deraining-on-rain100l">
+              </a>
+              <a href="https://paperswithcode.com/sota/color-image-denoising-on-mcmaster-sigma50?p=pre-trained-image-processing-transformer">
+                <img src="https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/pre-trained-image-processing-transformer/color-image-denoising-on-mcmaster-sigma50">
+              </a>
+            </div>
+          </div>
+
+          <div class="row vspace-top">
+            <div class="col-xs-3 text-center">
+              <img class="paper-image" src="./IPT_series_files/ipg_fig.png">
+            </div>
+            <div class="col-xs-9">
+              <div class="paper-title">
+                Image Processing GNN: Breaking Rigidity in Super-Resolution (IPG)
+              </div>
+              <!-- <div class="paper-authors">
+                Yuchuan Tian,
+                Hanting Chen,
+                Chao Xu,
+                <a href="https://www.wangyunhe.site/">Yunhe Wang</a>
+              </div> -->
+              <div>CVPR 2024</div>
+              <div> <i>"A flexible graph solution for SR" </i></div>
+              <div>
+                <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Tian_Image_Processing_GNN_Breaking_Rigidity_in_Super-Resolution_CVPR_2024_paper.pdf">[Paper]</a>
+                <a href="https://github.com/huawei-noah/Efficient-Computing/tree/master/LowLevel/IPG">[Code]</a>
+                <a href="./IPT_series_files/ipg_bib.bib">[BibTex]</a>
+              </div>
+              <font color="#FF0000">Best Student Paper Runner-Up (Top 10/2720)</font>
+            </div>
+          </div>
+
+          <div class="row vspace-top">
+            <div class="col-xs-3 text-center">
+              <img class="paper-image" src="./IPT_series_files/instructipt_fig.png">
+            </div>
+            <div class="col-xs-9">
+              <div class="paper-title">
+                Instruct-IPT: All-in-One Image Processing Transformer via Weight Modulation
+              </div>
+              <div>ArXiv</div>
+              <div> <i>"A powerful All-in-One solution on various low-level tasks" </i></div>
+              <div>
+                <a href="https://arxiv.org/abs/2407.00676">[Paper]</a>
+                <a href="https://github.com/huawei-noah/Pretrained-IPT">[Code]</a>
+                <a href="./IPT_series_files/instructipt_bib.bib">[BibTex]</a>
+              </div>
+              <a href="https://paperswithcode.com/sota/image-dehazing-on-sots-outdoor?p=instruct-ipt-all-in-one-image-processing">
+                <img src="https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/instruct-ipt-all-in-one-image-processing/image-dehazing-on-sots-outdoor">
+              </a>
+              <a href="https://paperswithcode.com/sota/single-image-deraining-on-rain100l?p=instruct-ipt-all-in-one-image-processing">
+                <img src="https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/instruct-ipt-all-in-one-image-processing/single-image-deraining-on-rain100l">
+              </a>
+              <a href="https://paperswithcode.com/sota/single-image-desnowing-on-csd?p=instruct-ipt-all-in-one-image-processing">
+                <img src="https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/instruct-ipt-all-in-one-image-processing/single-image-desnowing-on-csd">
+              </a>
+
+            </div>
+          </div>
+
+
+          <div class="row vspace-top">
+            <div class="col-xs-3 text-center">
+              <img class="paper-image" src="./IPT_series_files/udit_fig.png">
+            </div>
+            <div class="col-xs-9">
+              <div class="paper-title">
+                U-DiTs: Downsample Tokens in U-Shaped Diffusion Transformers
+              </div>
+              <div>ArXiv</div>
+              <div> <i>"1/6 of DiT-XL FLOPs, but better performance" </i></div>
+              <div>
+                <a href="https://arxiv.org/abs/2405.02730">[Paper]</a>
+                <a href="https://github.com/YuchuanTian/U-DiT">[Code]</a>
+                <a href="./IPT_series_files/udit_bib.bib">[BibTex]</a>
+              </div>
+            </div>
+          </div>
+
+        
+        <div class="row vspace-top"></div>
+      </div>
+    </div>
+  
+
+</body></html>
